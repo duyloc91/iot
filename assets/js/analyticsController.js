@@ -30,7 +30,7 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
 
     var reqSensor1 = {
         method: 'GET',
-        url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/1/wh-logs',
+        url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/1/wh-logs',
         headers: {
           'Content-Type': "undefined"
         }
@@ -44,7 +44,7 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
     
     var reqSensor2 = {
         method: 'GET',
-        url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/2/wh-logs',
+        url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/2/wh-logs',
         headers: {
           'Content-Type': "undefined"
         }
@@ -58,7 +58,7 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
     
     var reqSensor3 = {
         method: 'GET',
-        url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/3/wh-logs',
+        url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/3/wh-logs',
         headers: {
           'Content-Type': "undefined"
         }
@@ -73,7 +73,7 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
     
     var weatherRequest = {
         method: 'GET',
-        url: 'http://api.openweathermap.org/data/2.5/forecast?q=Singapore&APPID=98cb3df5da2dfe7e78d448befd911bb1',
+        url: 'https://api.openweathermap.org/data/2.5/forecast?q=Singapore&APPID=98cb3df5da2dfe7e78d448befd911bb1',
         headers: {
           'Content-Type': "undefined"
         }
@@ -144,7 +144,7 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
             var uvIndex = 12;
             $http({
             method: 'GET',
-            url: 'http://api.openweathermap.org/v3/uvi/1.3,103.8/' + date + 'Z.json?appid=cb0705c8ed5c851213846170b6328fe7',
+            url: 'https://api.openweathermap.org/v3/uvi/1.3,103.8/' + date + 'Z.json?appid=cb0705c8ed5c851213846170b6328fe7',
             }).then(function(res){
                 uvIndex = res.data.data;
             });
