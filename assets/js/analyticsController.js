@@ -527,7 +527,7 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
         "dataProvider": [{
             "name": "Pi & Router",
             "startTime": 11,
-            "endTime": 7,
+            "endTime": 19,
             "color": "#FF0F00"
         }, {
             "name": "PCB & Compactor",
