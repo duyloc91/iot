@@ -33,7 +33,7 @@ app.controller("smartbinsCtrl", [ "$scope", "$http", function($scope, $http) {
         
         var reqSensor1 = {
             method: 'GET',
-            url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/1/wh-logs',
+            url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/1/wh-logs',
             headers: {
               'Content-Type': "undefined"
             }
@@ -103,7 +103,7 @@ app.controller("smartbinsCtrl", [ "$scope", "$http", function($scope, $http) {
     
     var reqSensor2 = {
             method: 'GET',
-            url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/2/wh-logs',
+            url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/2/wh-logs',
             headers: {
               'Content-Type': "undefined"
             }
@@ -173,7 +173,7 @@ app.controller("smartbinsCtrl", [ "$scope", "$http", function($scope, $http) {
         
         var reqSensor3 = {
             method: 'GET',
-            url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/3/wh-logs',
+            url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/3/wh-logs',
             headers: {
               'Content-Type': "undefined"
             }

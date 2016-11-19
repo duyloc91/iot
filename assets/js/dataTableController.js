@@ -15,7 +15,7 @@ var app = angular.module('smartbins', []);
 app.controller("dataTableCtrl", [ "$scope", "$http", function($scope, $http) {
     var reqSensor1 = {
         method: 'GET',
-        url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/1/wh-logs',
+        url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/1/wh-logs',
         headers: {
           'Content-Type': "undefined"
         }
@@ -30,7 +30,7 @@ app.controller("dataTableCtrl", [ "$scope", "$http", function($scope, $http) {
     
     var reqSensor2 = {
         method: 'GET',
-        url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/2/wh-logs',
+        url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/2/wh-logs',
         headers: {
           'Content-Type': "undefined"
         }
@@ -44,7 +44,7 @@ app.controller("dataTableCtrl", [ "$scope", "$http", function($scope, $http) {
     
     var reqSensor3 = {
         method: 'GET',
-        url: 'https://is439app.139.59.238.27.nip.io/api/power-sensors/3/wh-logs',
+        url: 'http://is439app.139.59.238.27.nip.io/api/power-sensors/3/wh-logs',
         headers: {
           'Content-Type': "undefined"
         }
@@ -59,7 +59,7 @@ app.controller("dataTableCtrl", [ "$scope", "$http", function($scope, $http) {
     
     var weatherRequest = {
             method: 'GET',
-            url: 'https://api.openweathermap.org/data/2.5/forecast?q=Singapore&APPID=98cb3df5da2dfe7e78d448befd911bb1',
+            url: 'http://api.openweathermap.org/data/2.5/forecast?q=Singapore&APPID=98cb3df5da2dfe7e78d448befd911bb1',
             headers: {
               'Content-Type': "undefined"
             }
