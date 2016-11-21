@@ -168,8 +168,8 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
             sensor3Cumulative3.measurement_taken_date_hour = fw.dt_txt.substring(0, 11) + (Number(hour)+2) + ":00";
             
             var wH1 = 50;
-            var wH2 = 50;
-            var wH3 = 50;
+            var wH2 = 20;
+            var wH3 = 20;
             var hour1 = Number(hour);
             var hour2 = Number(hour) + 1;
             var hour3 = Number(hour) + 2;
