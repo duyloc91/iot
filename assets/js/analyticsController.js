@@ -168,8 +168,8 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
             sensor3Cumulative3.measurement_taken_date_hour = fw.dt_txt.substring(0, 11) + (Number(hour)+2) + ":00";
             
             var wH1 = 50;
-            var wH2 = 20;
-            var wH3 = 20;
+            var wH2 = 50;
+            var wH3 = 50;
             var hour1 = Number(hour);
             var hour2 = Number(hour) + 1;
             var hour3 = Number(hour) + 2;
@@ -223,8 +223,8 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
             
             //sensor 3
             if(hour1 === 7 || hour1 === 8 || hour1 === 12 || hour1 === 13 || hour1 === 18 || hour1 === 19 || hour1 === 20 ){
-                sensor3Cumulative1.wh = 30;
-                cumulatedWH3 = cumulatedWH3 + 24;
+                sensor3Cumulative1.wh = 20;
+                cumulatedWH3 = cumulatedWH3 + 20;
                 sensor3Cumulative1.cumulatedWH3 = cumulatedWH3;
                 cumulative_fegh1.cumulatedWH3 = cumulatedWH3;
             } else if(hour1 <= 5){
@@ -239,8 +239,8 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
                 cumulative_fegh1.cumulatedWH3 = cumulatedWH3;
             }
             if(hour2 === 7 || hour2 === 8 || hour2 === 12 || hour2 === 13 || hour2 === 18 || hour2 === 19 || hour2 === 20 ){
-                sensor3Cumulative2.wh = 30;
-                cumulatedWH3 = cumulatedWH3 + 30;
+                sensor3Cumulative2.wh = 20;
+                cumulatedWH3 = cumulatedWH3 + 20;
                 sensor3Cumulative2.cumulatedWH3 = cumulatedWH3;
                 cumulative_fegh2.cumulatedWH3 = cumulatedWH3;
             } else if(hour2 <= 5){
@@ -256,8 +256,8 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
             }
             
             if(hour3 === 7 || hour3 === 8 || hour3 === 12 || hour3 === 13 || hour3 === 18 || hour3 === 19 || hour3 === 20 ){
-                sensor3Cumulative3.wh = 30;
-                cumulatedWH3 = cumulatedWH3 + 30;
+                sensor3Cumulative3.wh = 20;
+                cumulatedWH3 = cumulatedWH3 + 20;
                 sensor3Cumulative3.cumulatedWH3 = cumulatedWH3;
                 cumulative_fegh3.cumulatedWH3 = cumulatedWH3;
             } else if(hour2 <= 5){
@@ -329,9 +329,9 @@ app.controller("analyticsCtrl", [ "$scope", "$http", function($scope, $http) {
                 fEGday.totalEG = 0 + wH1.toFixed(2) + wH2.toFixed(2) + wH3.toFixed(2);
             }
             
-            sensor2Cumulative1.wH = 24;
-            sensor2Cumulative2.wH = 24
-            sensor2Cumulative3.wH = 24;
+            sensor2Cumulative1.wH = 14;
+            sensor2Cumulative2.wH = 14
+            sensor2Cumulative3.wH = 14;
             
             $scope.cumulativeEGhours.push(cumulative_fegh1);
             $scope.cumulativeEGhours.push(cumulative_fegh2);
